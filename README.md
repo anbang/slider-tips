@@ -114,11 +114,11 @@
 上面是CMD模式的开发代码；
 
 - 引入JS: src/slide-tips.js
-- 引入CSS: src/slide-tips.css  //里面配置了一些基本的箭头样式和边框样式，非必须引用；
+- 引入CSS: css/slide-tips.css  //里面配置了一些基本的箭头样式和边框样式，非必须引用；
 
 ##### 如果您是直接使用jQuery的
 
-直接jQuery（没有基于CMD），需要构造函数的方法使用，不能使用上面的js用法；
+直接jQuery（没有基于CMD），需要构造函数的方法使用，不能使用上面的js用法,文件请引入jQuery文件夹下的slide-tips.js；
 
 	var slieTips=New Follow(options);//slieTips是当前实例；实例中可以直接获取内部属性和方法；
 
@@ -138,6 +138,8 @@
 
 
 ##### class名，可简单的设置箭头方向，边框演示，有无padding和圆角等；
+
+仅仅是简单的配置，如果您是自定义面板区域的样式，则不需要引入slide-tips.css,非必须引入
 
 - slide_tip_panel //面板区DOM包裹层的类名，下面所有类名均放在此类目的同级
 
