@@ -1,0 +1,265 @@
+
+#page-demo{
+    position: relative;
+}
+/* 行情显示区域 */
+.coinListBox {
+    position: absolute;
+    width: 754px;
+    /*top: 36px;*/
+    z-index: 100;
+    background-color: #fff;
+    box-shadow: 0 1px 1px 1px #e6e6e6;
+    border-radius: 5px;
+    margin-top: 10px;
+    border-top: 1px solid #e6e6e6;
+    display: none;
+}
+
+.coinListBox:after {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    top: -6px;
+    left: 52px;
+    overflow: hidden;
+    pointer-events: none;
+    -webkit-transform: rotate(135deg);
+    -mz-transform: rotate(135deg);
+    transform: rotate(135deg);
+    border-left: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    background: #fff
+}
+
+.coin-table {
+    padding: 0 10px;
+    width: 714px;
+    /*margin: 10px auto;*/
+
+}
+
+.coin-table tbody {
+    height: 253px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.coin-table tr {
+    cursor: default;
+}
+
+.coin-table th, .coin-table td {
+    color: #999;
+    height: 36px;
+    line-height: 36px;
+    padding-left: 5px;
+}
+
+.coin-table em {
+    font-style: normal !important;
+}
+
+.coin-table .red {
+    color: #db3036 !important
+}
+
+.coin-table .green {
+    color: #25a85e !important
+}
+
+.coin-table .mar-left5 {
+    margin-left: 5px
+}
+
+.coin-table .mar-right5 {
+    margin-right: 5px
+}
+
+.coin-table .mar-right2 {
+    margin-right: 2px
+}
+
+.coin-table . {
+    margin-right: 0px;
+}
+
+.coin-table tr td {
+    border: none;
+    border-top: 1px solid #e6e6e6;
+}
+
+.coin-table tr th:nth-of-type(1), .coin-table tr td:nth-of-type(1) {
+    text-indent: 10px;
+    text-align: left;
+}
+
+.coin-table tr th:nth-of-type(6), .coin-table tr td:nth-of-type(6) {
+    padding-right: 10px
+}
+
+.coin-table tr th:nth-of-type(2), .coin-table tr td:nth-of-type(2),
+.coin-table tr th:nth-of-type(3), .coin-table tr td:nth-of-type(3),
+.coin-table tr th:nth-of-type(4), .coin-table tr td:nth-of-type(4),
+.coin-table tr th:nth-of-type(5), .coin-table tr td:nth-of-type(5),
+.coin-table tr th:nth-of-type(6), .coin-table tr td:nth-of-type(6) {
+    text-align: right;
+}
+
+.coin-table tr th:nth-of-type(1), .coin-table tr td:nth-of-type(1) {
+    width: auto;
+    box-sizing: border-box;
+}
+
+.coin-table tr th:nth-of-type(6), .coin-table tr td:nth-of-type(6) {
+    width: 139px;
+    box-sizing: border-box;
+}
+
+.coin-table tr th:nth-of-type(2), .coin-table tr td:nth-of-type(2),
+.coin-table tr th:nth-of-type(3), .coin-table tr td:nth-of-type(3),
+.coin-table tr th:nth-of-type(4), .coin-table tr td:nth-of-type(4) {
+    width: 126px;
+    box-sizing: border-box;
+}
+
+.coin-table tr th:nth-of-type(5), .coin-table tr td:nth-of-type(5) {
+    width: 77px;
+    box-sizing: border-box;
+}
+
+.coin-table tr th:nth-of-type(2) {
+    padding-right: 33px !important;
+}
+
+.coin-table tr th:nth-of-type(3),
+.coin-table tr th:nth-of-type(4),
+.coin-table tr th:nth-of-type(5) {
+    padding-right: 16px !important;
+}
+
+.coin-table tr th:nth-of-type(6) {
+    padding-right: 57px !important;
+}
+
+.coin-table .vol-currency {
+    display: inline-block;
+    width: 25px;
+    text-align: left;
+}
+
+.coin-table tbody tr:hover {
+    background-color: rgba(0, 150, 223, .1)
+}
+
+.coin-table tr:hover > td:nth-of-type(1) {
+    color: #0096df
+}
+
+.noborder td {
+    border: none !important;
+}
+
+.noborder:hover {
+    background-color: #fff !important;
+}
+
+.indent0 {
+    text-indent: 0px !important;
+}
+
+.coin-table tbody {
+    display: block;
+    height: 250px;
+    overflow-y: auto;
+}
+
+.coin-table thead, .coin-table tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+/* header */
+#top-mid-panel{width: 500px;height: 500px;background-color: #4d2584;border-radius: 4px;
+    display: none;
+    position: absolute;
+}
+#top-right-panel{width: 500px;height: 100px;background-color: #159357;border-radius: 4px;
+    display: none;
+    position: absolute;
+}
+#top-click-panel{
+    width: 500px;height: 100px;background-color: #159357;border-radius: 4px;
+    display: none;
+    position: absolute;
+}
+
+/* bodyer */
+#bodyer{  padding: 200px 0;  }
+/*#page-demo div{  color: #fff;  }*/
+.bodyer-left{width: 200px;float: left;}
+.bodyer-right{width: 200px;float: right;}
+.bodyer-left .wui-button{width: 100%;margin: 10px 20px 30px 40px;height: 60px;line-height: 60px;}
+.bodyer-right .wui-button{width: 100%;margin: 10px 20px 30px 40px;height: 60px;line-height: 60px;}
+
+/* 左侧 */
+#bodyer-left-top-panel{width: 450px;height: 200px;background-color: #3b7cb8;border-radius: 4px;
+    margin-left:10px;
+    display: none;
+    position: absolute;
+}
+#bodyer-left-mid-panel{width: 500px;height: 120px;background-color: #4d2584;border-radius: 4px;
+    display: none;
+    position: absolute;
+}
+#bodyer-left-bottom-panel{width: 300px;height: 250px;background-color: #159357;border-radius: 4px;
+    display: none;
+    position: absolute;
+}
+/* 右侧 */
+#bodyer-right-top-panel{width: 450px;height: 300px;background-color: #3b7cb8;border-radius: 4px;
+    display: none;
+    position: absolute;
+}
+#bodyer-right-mid-panel{width: 500px;height: 320px;background-color: #4d2584;border-radius: 4px;
+    display: none;
+    position: absolute;
+}
+#bodyer-right-bottom-panel{width: 300px;height: 350px;background-color: #159357;border-radius: 4px;
+    display: none;
+    position: absolute;
+}
+
+
+
+/* footer */
+#page-demo .footer_share{color: #999;font-size: 16px;}
+.btn-demo-wrap{  display: flex;}
+.btn-demo-wrap .wui-button{flex: 1;margin: 10px 20px 30px 40px;}
+
+#footer-left-panel{width: 500px;height: 300px;background-color: #3b7cb8;border-radius: 4px;
+    display: none;
+    position: absolute;
+}
+#footer-mid-panel{width: 500px;height: 500px;background-color: #4d2584;border-radius: 4px;
+    display: none;
+    position: absolute;
+}
+#footer-right-panel{width: 500px;height: 100px;background-color: #159357;border-radius: 4px;
+    display: none;
+    position: absolute;
+}
+
+
+/* 中间共同父级的 */
+.common-parent-slide{width: 1400px;margin: 0 auto;  border: 1px solid firebrick;}
+.common-parent-slide .parent_demo_item{display: inline-block;margin-left: 200px;}
+.common-parent-slide .demo_panel{  width: 300px;height: 100px;background-color: darkgrey;display: none;}
+
+.common-parent-slide2{width: 1400px;margin: 0 auto;  padding-left: 50px;padding-top: 50px;padding-bottom: 20px;border: 1px solid darkcyan;}
+.common-parent-slide2 .parent_demo_item{display: inline-block;margin-left: 200px;}
+.common-parent-slide2 .demo_panel{  width: 200px;height: 100px;background-color: #8B4513;display: none;}
+
+.slide_tip_trigger{display: inline-block;padding: 10px 20px 10px 40px;background-color: #ccd6ca;margin: 20px 30px 50px 50px;}
